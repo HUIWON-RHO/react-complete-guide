@@ -106,4 +106,7 @@ When creating components, have choice between **Functional components**, **class
 
 - Inside of styled-components, using normal CSS
 
+- CSS Modules are relatively new concept. With CSS modules, you can write normal CSS code and make sure, that it only applies to a given component.
+  It will simply automatically generate unique CSS class names for you. And by importing a JS object and assigning classes from there, you use these dynamically generated, unique names. So the imported JS object simply exposes some properties which hold the generated CSS class names as values.
+
 </details>
