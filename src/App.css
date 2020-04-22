@@ -1,0 +1,11 @@
+:global .App {
+  text-align: center;
+}
+
+:global .red {
+  color: red;
+}
+
+:global .bold {
+  font-weight: bold;
+}
