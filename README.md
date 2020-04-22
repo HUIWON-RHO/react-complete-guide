@@ -5,7 +5,7 @@ react
 # React
 
 <details>
-<summary>**Click** Section 1 : Getting Started</summary>
+<summary style="color:green;">**Click** Section 1 : Getting Started</summary>
 
 - react 는 html 이 webpage에서 각 components를 따로 분류해서 사용될 수 있게함. 수정, 다시 사용에 간편
 
