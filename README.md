@@ -1,11 +1,7 @@
 # react-complete-guide
 
-react
-
-# React
-
 <details>
-<summary>**Click** Section 1 : Getting Started</summary>
+<summary> Click🖱 Section 1 : Getting Started</summary>
 
 - react 는 html 이 webpage에서 각 components를 따로 분류해서 사용될 수 있게함. 수정, 다시 사용에 간편
 
@@ -24,7 +20,7 @@ react
 </details>
 
 <details>
-<summary>**Click** Section 2 : Next Generation JS</summary>
+<summary> Click🖱 Section 2 : Next Generation JS</summary>
 
 - let, const
 
@@ -48,11 +44,11 @@ react
 
 - Spread(...) : Used to split up array elements OR object properties
 
-Rest(...) : Used to merge a list of function arguments into an array
+- Rest(...) : Used to merge a list of function arguments into an array
 
 - Destructuring : Easily extract array elements or object properties and store them in variables.
 
-Array Destructuring, Object Destructuring
+- Array Destructuring, Object Destructuring
 
 - Reference and Primitive Types Refresher
 
@@ -61,7 +57,7 @@ Array Destructuring, Object Destructuring
 </details>
 
 <details>
-<summary>**Click** Section 3 : Understanding the Base Features & Syntax</summary>
+<summary> Click🖱 Section 3 : Understanding the Base Features & Syntax</summary>
 
 - To use JSX,
 
@@ -88,21 +84,21 @@ When creating components, have choice between **Functional components**, **class
 </details>
 
 <details>
-<summary>**Click** Section 4 : Working with Lists and Conditionals</summary>
+<summary> Click🖱 Section 4 : Working with Lists and Conditionals</summary>
 
 - If an empty string ("") is used as the separator, the string is split between each character
 
-  deleteCharHandler = (index) => {
-  const inputChar = this.state.userInput.split(""); //make string into array
-  inputChar.splice(index, 1);
-  const updated = inputChar.join("");
-  this.setState({ userInput: updated });
-  };
+        deleteCharHandler = (index) => {
+        const inputChar = this.state.userInput.split(""); //make string into array
+        inputChar.splice(index, 1);
+        const updated = inputChar.join("");
+        this.setState({ userInput: updated });
+        };
 
 </details>
 
 <details>
-<summary>**Click** Section 5 : Styling React Components & Elements</summary>
+<summary> Click🖱 Section 5 : Styling React Components & Elements</summary>
 
 - join(' ') method : ['red','bold'] into "red bold" string
 
@@ -114,3 +110,37 @@ When creating components, have choice between **Functional components**, **class
   It will simply automatically generate unique CSS class names for you. And by importing a JS object and assigning classes from there, you use these dynamically generated, unique names. So the imported JS object simply exposes some properties which hold the generated CSS class names as values.
 
 </details>
+
+
+<details>
+<summary> Click🖱 Section 7 : Diving Deeper into Components & React Internals </summary>
+
+- Stateless and Stateful Components
+      Stateful components are keeping track of changing data, while stateless components print out what is given to them via props, or they always render the same thing. Notice the stateless component is written as a function.
+
+      To make stateless components, use function or class
+
+- Class-based vs Functional Components
+
+      class App extends Component{render(return())}
+          
+          - Access to State, Lifecycle Hooks
+
+      const Button = (props) = > {return()};
+
+          - Access to State (useState())
+
+      ✨Benefits of using functional components in React : easier to read and test, less code
+
+      ✨Use class-based components if you need to manage State or access to Lifecycle Hooks and you don't want to use React Hooks!
+
+- Component Lifecycle
+
+- ComponentDidMount() : It is called once in the component life cycle and it signals that the component and all its sub-component have rendered properly.
+
+- 읽어보면 이해에 좋은 포스트 : https://jaeyeophan.github.io/2018/01/02/React-tips-for-beginners/
+https://velog.io/@kyusung/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B5%90%EA%B3%BC%EC%84%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%EB%B2%A4%ED%8A%B8
+
+
+</details>
+
