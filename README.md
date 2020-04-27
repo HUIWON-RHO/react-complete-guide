@@ -1,4 +1,4 @@
-# react-complete-guide
+# React-complete-guide
 
 <details>
 <summary> Click🖱 Section 1 : Getting Started</summary>
