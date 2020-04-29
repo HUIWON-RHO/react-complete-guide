@@ -138,9 +138,66 @@ When creating components, have choice between **Functional components**, **class
 
 - ComponentDidMount() : It is called once in the component life cycle and it signals that the component and all its sub-component have rendered properly.
 
+- Life Cycle Method 는 기본적으로 react가 component를 생성하고 없애는 방법
+
+        * Mounting
+        
+        constructor() 클래스가 생성될 때 호출됨, render()보다 먼저 호출됨
+
+        render()
+
+        componentDidMount() 첫번째 render() 실행이 완료되었을 때를 의미
+
+        * Updating : 우리가 바꾸는 것들, 예를 들어 버튼을 클릭한다거나..
+
+        shouldComponentUpdate() 이 함수는 setState를 호출할 때 마다 발생
+
+        render()
+
+        componentDidUpdate() 
+
+        * Unmounting
+
+        componentWillUnmount() component가 떠날 때 호출됨
+    
+- useEffect() hooks can do as componentDidMount, componentDidUpdate, compoentWillUnmount
+
 - 읽어보면 이해에 좋은 포스트 : https://jaeyeophan.github.io/2018/01/02/React-tips-for-beginners/
 https://velog.io/@kyusung/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B5%90%EA%B3%BC%EC%84%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%EB%B2%A4%ED%8A%B8
+
+- Optimizing Functional Components with React.memo() : 변경되지 않은 동일한 prop에 대해 리렌더링을 하는 것을 방지
+
+- React.Component vs React.PureComponent : React.Compoent 와 React.PureComponent는 shouldComponentUpdate 라이프사이클 메소드를 다루는 방식을 제외하곤 동일하다. React.Component를 확장해 컴포넌트를 만들 때, shouldComponentUpdate 메소드를 별도 선언하지 않았다면 컴포넌트는 prrops, state 값이 변경되면 항상 랜더링을 새롭게 한다. (리랜더링) 그러나 React.PureComponent를 확장해 만들면 shouldComponentUpdate를 선언하지 않아도 내부에서 props 와 stste를 비교하여 변경된 값이 있을때만 리랜더링한다.
+❕❕그니까 pure는 shouldComponentUpdate가 없어도 알아서 변경이 있을때만 리랜더링
+
+- Wrapping with higher order component 
+
+        import React from 'react';
+
+        const aux = props => props.children;
+
+        export default aux;
+
+        (wrap with Aux, React.Fragment, Fragment)
+
+- {...props} pulls out all the properties inside of props object and distribute them as new key value pairs on the wrap component 자동으로 비하인드 씬에서 전달하는 props의 key value들을 전부 전달받음.
+
+- PropTypes
+
+- useRef(): 1. 특정 dom을 선택하기 위해 사용, 2. 리렌더링 할때마다 어떤 값을 기억해야 할 때 사용
+
+- Context API, ContextType
+        1. Context 만들기 2. Provider 3. Consumer
+
+        https://blog.naver.com/woosop84/221850797505
+
+- 
 
 
 </details>
 
+
+
+
+
+❕여러 줄 주석처리는 ctrl+K+C , 해제는 ctrl+K+U
