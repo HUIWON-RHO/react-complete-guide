@@ -201,3 +201,20 @@ https://velog.io/@kyusung/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B5%90%EA%B3%BC%EC%84%9
 
 
 ❕여러 줄 주석처리는 ctrl+K+C , 해제는 ctrl+K+U
+
+<details>
+<summary> ❕ Github 에 올리기 </summary>
+
+1. git init
+
+2. github 홈페이지 가서 레포지토리 만들고 주소 복사
+
+3. git remote add origin 주소카피페이스트
+
+4. git add .
+
+5. git commit -m "이름"
+
+6. git push origin master
+
+</details>
